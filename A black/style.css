@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+.back{
+	background-image: url("bg2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+}
+.content{
+	padding-top: 140px;
+	width: 65%;
+	margin: auto;
+}
+.one:hover #hide{
+	display: none;
+}
+.one:hover #show{
+	display: block;
+	padding-left: 28px;
+} 
+.two:hover #hide2{
+	display: none;
+}
+.two:hover #show2{
+	display: block;
+	padding-left: 28px;
+} 
+.three:hover #hide3{
+	display: none;
+}
+.three:hover #show3{
+	display: block;
+	padding-left: 28px;
+}
+#show{
+	display: none;
+	color: #fff;
+	font-size: 129.8px;
+	cursor: pointer;  
+}
+#show a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#show2 a{
+	color: #EA0F1E;
+	text-decoration: none;
+}
+#show3 a{
+	color: #EA0F1E;
+	text-decoration: none;
+}
+
+#show2{
+	display: none;
+	font-size: 129px;
+	color: #EA0F1E;
+	cursor: pointer; 
+}
+#show3{
+	display: none;
+	font-size: 129px;
+	color: #EA0F1E;
+	cursor: pointer;  
+}
+#hide{
+    color: #fff;
+    font-size: 129px;
+    cursor: pointer; 
+}
+#hide2{
+	color: #EA0F1E;
+	font-size: 129px;
+	cursor: pointer; 
+}
+#hide3{
+	color: #EA0F1E;
+	cursor: pointer;
+	font-size: 129px; 
+} 
+ 
+
+@media(max-width: 750px){
+.content{
+	padding-top: 200px;
+	width: 90%;
+}
+#show{
+	font-size: 80px;
+}
+#show2{
+	font-size: 80px;
+}
+#show3{
+	font-size: 80px;
+}
+#hide{
+	font-size: 80px;
+}
+#hide2{
+	font-size: 80px;
+}
+#hide3{
+	font-size: 80px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
