@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 	*{
 		padding: 0;
 		margin: 0;
-		font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 	}
 	.black{
 		width: 100%;
@@ -22,18 +22,18 @@
 		width: 100%; 
 	}
 	.content h1{
-		width: 72%;
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		font-size: 112px;
-		padding: 95px 0px 0px 145px;
-
+		font-size: 7vw; 
+		padding-top: 9.2%;
 	}
 	.sticky{
 		position: fixed;
-		top: 13%;
+		top: 13.5%;
 		right: 8%;
-		font-size: 28px;
-		transform: translate(-13%, -8%);
+		font-size: 26px;
+		transform: translate(-13.5%, -8%);
 	}
 	.content h6 a{
 		color: #000;
@@ -41,6 +41,7 @@
 	}
 	#sk{
 		opacity: 0;
+		font-weight: bold;
 		transition: 0.2s;
 	}
 	.sticky h6:hover #sk{
@@ -49,17 +50,17 @@
 	}
  
 	.content p{
-		width: 72%;
+		color: #888888; 
+		padding-top: 10px;
+		padding-bottom: 7%; 
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		color: #888888;
-		font-size: 21px;
-		padding-top: 20px;
-		padding-bottom: 40px;
-		padding-left: 110px;
+		font-size: 1.3vw;  
 	}
 	.content blockquote{
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	.image{
 		height: auto;
@@ -71,30 +72,21 @@
 		height: auto;
 	}
 	.content h2{
-		font-size: 44px;
+		font-size: 40px;
 		width: 48%;
+		font-weight: 500;
 		margin: auto;
-		padding: 100px 0px 50px 28px;
-	}
-	.content h3{
-		font-size: 23px;
-		width: 48%;
-		margin: auto;
-		font-weight: lighter;
-		line-height: 43px;
-		letter-spacing: 0.5px;
-		padding-bottom: 50px;
-		padding-left: 30px;
+		padding: 30px 0px 28px 0px;
 	}
 	.content h4{
 		color: #000000;
-		font-size: 19px;
+		font-size: 17px;
 		width: 48%;
 		margin: auto;
-		font-weight: initial;
-		padding-bottom: 40px;
-		padding-left: 30px;
-		line-height: 36px;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		padding-bottom: 26px; 
+		line-height: 30px;
 	}
 	.image2{
 		height: auto;
@@ -104,43 +96,89 @@
 	.image2 img{
 		max-width: 100%;
 		height: auto;
+		margin-top: 50px;
+		margin-bottom: 65px;
 	}
+	::selection {
+        color: #fff;
+        background: black;
+}
+
+.header {
+  position: fixed;
+  top: 0; 
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #D1001D;
+  width: 0%;
+}
+
+
 	 @media(max-width: 780px){
 	 	.content{
 	 		width: 100%;	
 	 	}
-	 	.sticky{
+	 .sticky{
 		position: fixed;
 		top: 6%;
-		right: 5%;
-		font-size: 25px;
-		transform: translate(-6%, -5%);
+		right: 12%;
+		font-size: 26px;
+		transform: translate(-6%, -12%);
+	} 
+	#sk{
+		display: none;
 	}
 	.content h1{
-		font-size: 55px;
-		padding: 40px 0px 0px 30px;
+		width: 92%;
+		font-size: 57px;
+		padding: 150px 0px 0px 30px;
 	}
 	.content p{
-		color: #888888;
-		font-size: 21px;
-		padding-top: 12px;
-		padding-bottom: 30px;
-		padding-left: 32px;
+		width: 85%;  
+		font-size: 18.5px;
+		padding-top: 2px;
+		line-height: 34px;
+		padding-bottom: 60px;
+		padding-left: 0px;
 	} 
+	.image{
+		height: 90vh;
+		width: 93%;  
+		margin-left: auto;
+		background-image: url(r5.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.image img{ 
+		display: none;
+	}
+	.image2{
+		width: 86%;
+	}
 	 .content blockquote{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	 }
 	 .content h2{
-		font-size: 27.5px;
-		width: 85%;
-		padding: 70px 0px 50px 0px;
+		font-size: 30px;
+		width: 86%;
+		font-weight: bold;
+		padding: 70px 0px 30px 0px;
 	}
 	.content h4{
-		font-size: 15px;
-		width: 85%; 
+		font-size: 17.5px;
+		width: 86%; 
 		padding-left: 0px;
-		line-height: 32px;
+		line-height: 29px;
 	}
 }
 	  
@@ -155,6 +193,13 @@
 
 	<div class="black">
 		<div class="content">
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
 
          <div class="sticky">
 		      <h6><a href="work.html">Shohel. <span id="sk">works</span> </a></h6>
@@ -185,6 +230,7 @@
               <h4>My clients where mostly start-ups or small and mid sized companies, where I was being challenged to build the right features for the right users. I grow as designer, by collaboration, research, advice, managing people and lead teams to bring their product into reality. By focusing on providing solution to a problem or a business need and creating a seamless user experience, the is desirable, unique, sticky and covetable.</h4>
 		     
 		     
+              <blockquote></blockquote>
 
 		     <h2>Rehash</h2>
 
@@ -196,10 +242,176 @@
 		      <div class="image2">
 		     	<img src="Rehash.png">
 		     </div>
+		      <div class="image2">
+		     	<img src="f2.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f3.png">
+		     </div>
+
+		     <blockquote></blockquote>
+
+		<h2>Pingg</h2>
+		<h4>Pingg has been initially thought as a mobile application helping gamers to stay in contact with each other at any time. This idea was imagined to work as a messaging app; simple, efficient and making the most of a high growth market.</h4>
+		<h4>The main idea of Pingg is allowing gamers to share a way of contacting each other whilst maintaining their privacy. Currently, the only way to invite one of your gamer friend offline would be by giving informations such as Facebook account, email or phone number.</h4>
+
+
+<h4>Pingg is meant to be as usable and simple as some of the main messaging app in the market to provide a service that user will understand instantly. Through a well handled UX, it should help gamers add their friends, send Pinggs and receive Pinggs whatever the platform they are using is.</h4>
+
+<div class="image2">
+		     	<img src="f1.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f8.png">
+		     </div>
+
+		     <blockquote></blockquote>
+
+<h2>ArtAttack</h2>
+<h4>ArtAttack is a mobile art marketplace and social network that gives artists and art-lovers the ability to view, buy and sell artwork.</h4>
+<h4>It exists to give artists an invigorating space to exhibit and sell their work, as well as document their development over time. For collectors, buyers and enthusiasts, it provides an opportunity to discover, follow and purchase work from the wealth of emerging talent that is coming out of art schools today.</h4>
+
+ <div class="image2">
+		     	<img src="f1.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f2.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f3.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f8.png">
+		     </div>
+
+		     <blockquote></blockquote>
+
+<h2>Sippo</h2>
+
+<h4>Drinking the correct amount of water is the simplest, most immediate way to feel more energized, focused & productive. Simply by using Sippo at work, you'll never come home tired, fatigued or dehydrated again, while creating a healthier you. Sippo is a smart cup that knows how much you have had to drink and reminds you when you forget. It’s easy to use throughout your day and is the fastest way for busy people to improve their drinking habits.</h4>
+
+<h4>Staying hydrated with Sippo Cup. Based on the users weight the app calculates and recommends a personalized daily hydration goal, that can change based on user activity and environmental conditions. The user can also adjust the part of the day in the week, where he feels most dehydrated. So Sippo knows when the user needs to drink and will send notifications.</h4>
+
+
+
+<div class="image2">
+		     	<img src="f4.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f1.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f2.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f5.png">
+		     </div>
+
+		     <blockquote></blockquote>
+
+<h2>Coffee House</h2>
+<h4>Personal project that I created to experiment with visual and user interactions. There is definitely a story behind it and a little research. Since I am a big coffee lover and enjoy a great cup of coffee, I wanted to work on something that would allow me to locate coffee shops nearby.</h4>
+
+<div class="image2">
+		     	<img src="f3.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f1.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f2.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f8.png">
+		     </div>
+
+
+<blockquote></blockquote>
+
+
+<h2>OneLess</h2>
+
+<h4>Big cities are overhauled with cars, so a bike is a great way to make the trip through your city. By choosing your bike over a car, doesn't only helps the environment but also your health benefits and simplifies your life. Riding a bike takes away your passive activity and replaces it with everyday activity that increases the user movements. Getting around with your bike doesn't only saves you money, in exchange it also provides a more relaxing ride through your neighborhood, without being caught in traffic jams with hundreds of other cars.</h4>
+
+
+<div class="image2">
+		     	<img src="f9.png">
+		     </div>
+		      <div class="image2">
+		     	<img src="f10.png">
+		     </div>
+
+
+
+
+<blockquote></blockquote>
+
+		     <h2>Eye candy</h2>
+		     <h4>Selected visual projects from different clients.</h4>
+
+<div class="image2">
+		     	<img src="f1.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="f2.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="f3.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="f4.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="f5.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="f6.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="f8.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="f11.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="f7.png">
+		     </div> 
+
+
+<blockquote></blockquote>
+<blockquote></blockquote>
+
+
+
+
+
+
+
+
 
 
 		</div>
 	</div>
+
+
+
+
+
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+
 
 </body>
 </html>

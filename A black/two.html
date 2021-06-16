@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Shohel/work/two</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,18 +23,18 @@
 		width: 100%; 
 	}
 	.content h1{
-		width: 72%;
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		font-size: 112px;
-		padding: 50px 0px 0px 110px;
-
+		font-size: 7vw; 
+		padding-top: 8%;
 	}
 	.sticky{
 		position: fixed;
-		top: 13%;
+		top: 13.5%;
 		right: 8%;
 		font-size: 28px;
-		transform: translate(-13%, -8%);
+		transform: translate(-13.5%, -8%);
 	}
 	.content h6 a{
 		color: #000;
@@ -41,6 +42,7 @@
 	}
 	#sk{
 		opacity: 0;
+		font-weight: bold;
 		transition: 0.2s;
 	}
 	.sticky h6:hover #sk{
@@ -66,7 +68,7 @@
 	}
 	.image{
 		height: auto;
-		width: 83%;
+		width: 82.5%;
 		margin-left: auto;
 	}
 	.image img{
@@ -81,12 +83,14 @@
 	.image2 img{
 		max-width: 100%;
 		height: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 	.content h2{
 		font-size: 40px;
 		width: 48%;
 		margin: auto;
-		padding: 150px 0px 50px 30px;
+		padding: 60px 0px 25px 0px;
 	}
 	.content h3{
 		font-size: 24px;
@@ -94,27 +98,40 @@
 		margin: auto;
 		letter-spacing: 0.5px;
 		font-weight: lighter;
-		line-height: 39px;
-		padding-bottom: 50px;
-		padding-left: 30px;
+		line-height: 38px;
+		padding-bottom: 26px;
+	}
+	#special{
+		font-size: 30px;
+		padding-top:55px;
+		width: 48%;
+		margin: auto;
+		line-height:42px;
+		font-weight: 500;
+		padding-bottom: 30px;
 	}
 	.content h4{
 		color: #000000;
-		font-size: 19px;
+		font-size: 18px;
 		width: 48%;
+		letter-spacing: 0.5px;
 		margin: auto;
 		font-weight: initial;
-		padding-bottom: 40px;
-		padding-left: 30px;
-		line-height: 31px;
+		padding-bottom: 26px; 
+		line-height: 30px;
 	}
 	 .content h5{
 	 	width: 48%;
 	 	margin: auto;
 	 	color: #EA0F1E;
-		font-size: 21px;
+		font-size: 20px;
+		letter-spacing: 0.5px;
 		padding-bottom: 15px;
-		padding-left: 30px;
+		transition: 0.3s; 
+		cursor: pointer;
+	 }
+	 .content h5:hover{
+        padding-left: 70px;
 	 }
 	 .come{
 	 	width: 48%;
@@ -123,13 +140,40 @@
 	 }
 	 
 	 .come blockquote{
-	 	padding: 20px 0;
+	 	padding: 0;
 	 	margin: 0;
-	 	line-height: 35px;
+	 	line-height: 30px;
 	 	font-size: 18px;
-	 	padding-left: 10px;
+	 	letter-spacing: 0.5px;
 	 	color: #666666;
 	 }
+	 ::selection {
+        color: #fff;
+        background: black;
+} 
+
+.header {
+  position: fixed;
+  top: 0; 
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #D1001D;
+  width: 0%;
+}
+#videoPlayer{
+	width: 66%;
+	margin: auto;
+}
+
 	 @media(max-width: 780px){
 	 	.content{
 	 		width: 100%;	
@@ -137,20 +181,36 @@
 	 	.sticky{
 		position: fixed;
 		top: 6%;
-		right: 5%;
-		font-size: 25px;
-		transform: translate(-6%, -5%);
+		right: 12%; 
+		font-size: 26px;
+		transform: translate(-6%, -12%);
+	} 
+	#sk{
+		display: none;
 	}
 	.content h1{
-		font-size: 55px;
-		padding: 40px 0px 0px 30px;
+		width: 92%;
+		font-size: 57px;
+		padding: 150px 0px 0px 30px;
 	}
-	.content p{
-		color: #888888;
+	.content p{ 
+		width: 85%; 
 		font-size: 21px;
 		padding-top: 12px;
-		padding-bottom: 30px;
-		padding-left: 30px;
+		line-height: 34px;
+		padding-bottom: 60px;
+		padding-left: 0px;
+	}
+	.image{
+		height: 90vh;
+		width: 93%;  
+		margin-left: auto;
+		background-image: url(r3.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.image img{ 
+		display: none;
 	}
 	#move{
 		display: block;
@@ -160,29 +220,32 @@
 		padding-bottom: 50px;
 	 }
 	 .content h2{
-		font-size: 27.5px;
-		width: 85%;
-		padding: 70px 0px 50px 0px;
+		font-size: 30px;
+		width: 86%;
+		padding: 70px 0px 30px 0px;
 	}
 	.content h3{
-		font-size: 19.5px;
-		width: 85%;
-		padding-left: 0px;
+		font-size: 24px;
+		width: 86%; 
 	}
 	.content h4{
-		font-size: 15px;
-		width: 85%; 
-		padding-left: 0px;
+		font-size: 18px;
+		width: 86%;  
 		line-height: 32px;
 	}
 		.content h5{
-	 	width: 85%; 
-		font-size: 18px; 
-		padding-left: 0px;
+	 	width: 86%; 
+		font-size: 19px;  
+	 }
+	 #special{
+	 	width: 86%;
+	 	font-size: 20px;
+	 }
+	 .content h5:hover{
+	 	padding-left: 0px;
 	 }
 	 .come{
-	 	width: 85%; 
-	 	padding-left: 0px; 
+	 	width: 86%;  
 	 	margin-bottom: 37px;
 	 	margin-top: 0px;
 	 } 
@@ -193,6 +256,14 @@
 	 	font-size: 17px;
 	 	color: #666666;
 	 }
+	 .image2{ 
+		width: 86%; 
+	}
+	#videoPlayer{
+	width: 86%; 
+}
+
+
 	}
 	  
 
@@ -205,7 +276,14 @@
 <body>
 
 	<div class="black">
+
 		<div class="content">
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
 
         <div class="sticky">
 		      <h6><a href="work.html">Shohel. <span id="sk">works</span> </a></h6>
@@ -246,6 +324,19 @@
 
 		     <h5>InVisionApp.com</h5>
 
+		     <h3 id="special"><b>History</b></h3>
+		     <h4>I've joined the team at InVision in January 2016. This was the time when Photoshop was still the dominant design tool and InVision was the only tool on the market empowering designers to prototype their static designs as rapid prototypes without a single line of code. This was a huge innovation, as there were no other options on the market before that.</h4>
+<h4>
+Soon after that Sketch entered the market and started to gain traction in the design space. A purpose based screen design tool, that completely disrupted the market. Yet InVision continued to hold the crown in the prototyping space as it added more features and started to move more into the enterprise territory as well as supporting Sketch files.</h4>
+<h4>
+After that InVision launched Craft. A suite of plugins for Sketch and Photoshop. It took the market by storm. Essentially what it did, it granted superpowers in terms of plugins to the most popular and dominant design tools. Plugins included the ability to work with live data, incorporating stock photography, freehand for easy markup and the most import one, prototyping natively inside Sketch.</h4>
+<h4>
+Couple of years later InVision announced the acquisition of Brand.ai, a leading platform for managing design systems and introduced InVision Design System Manager (DSM). The teams combined efforts have resulted in the definitive tool to help every product team create their own design system and innovate at scale like the world’s most design-forward companies.</h4>
+
+
+<div class="image2">
+		     	<img src="second.png">
+		     </div>
 
 
 		     <h2>Design System Manager (DSM)</h2>
@@ -256,8 +347,285 @@
 		     	<img src="second.png">
 		     </div>
 
+<h3 id="special"><b>Overview</b></h3>
+<h4>Every digital business faces a crucial challenge when they begin to scale—how to ship better products, faster, while still creating consistent user experience on every screen. It's incredibly hard to do.</h4>
+<h4>
+In 2017 InVision acquired Brand.ai, a leading platform for managing design systems, and introduced InVision Design System Manager (DSM). The teams combined efforts have resulted in the definitive tool to help every product team create their own design system and innovate at scale like the world’s most design-forward companies.
+</h4><h4>
+InVision DSM made it possible for every product team to create and maintain a design system at scale—allowing teams to maintain a consistent user experience across every digital interface. The company’s design language and library can now be managed and shared from the InVision platform—and accessed and updated in design tools such as InVision Studio and Sketch, as well as a web view.</h4>
+
+
+
+<h3 id="special"><b>My Role</b></h3>
+<h4>I have joined the DSM team in the early stages of the acquisition, before the official public announcement in October 2017. At the time the term "design system” slowly started to circulate around the design industry, which has later become a trend that couldn't be ignored. The opportunity to be part of a team that builds the tool to help product teams create their own design systems, became a fundamental and essential learning curve into the world of design systems.</h4>
+<h4>
+As a designer I worked alongside product managers, engineers, customer facing team and many other who contributed to the DSM.</h4>
+<h4>
+I worked with project managers to uncover insights into customer needs and goals, balanced business goals and prioritized features for launch and beyond.</h4>
+<h4>
+I created frameworks and prototypes to share the vision, design principles and content strategy. I helped realize ideas, gain alignment and drive decision making.</h4>
+<h4>
+I designed and presented work to gain buy-in from stakeholders and executives and many other internal teams through the lifecycle of the project.</h4>
+<h4>
+I lead multiple team and cross-team initiatives, drove conversations and found opportunities to move beyond the defined role and executed beyond planed vision.</h4>
+<h4>
+I lead the majority of the core web experience, building out large-scale interaction patterns for how users add content to documentation and customize the site’s look and feel.</h4>
+<h4>
+I worked closely with engineers to improve the collaboration process between designers and developers, make sure they use a common shared language and vocabulary and that the designs and features are implemented correctly.</h4>
+
+
+
+<div class="image2">
+		     	<img src="c5.png">
+		     </div>
+
+<div class="image2">
+		     	<img src="c5.png">
+		     </div>
+
+		     <div class="image2">
+		     	<img src="c6.png">
+		     </div>
+
+
+<h3 id="special"><b>New DSM</b></h3>
+<h4>To deliver on our customer expectations we have redesigned InVision Design System Manager (DSM). After doing a more thorough market analysis, understanding customer needs and gathering feedback we have redefined our product goals. New DSM brings a lot new compatibilities with Sketch libraries, allows for a more flexible and rich custom documentation and delivers on better performance improvements and long-term stability.</h4>
+<h5>Meet the new InVision DSM
+</h5>
+<div class="image2">
+		     	<img src="c5.png">
+		     </div>
+
+
+
+<h2>Craft</h2>
+<h4>In 2016 InVision built a "separate" venture InVision LABS to help the team grow and create products to build a better future for their users. This is how Craft was born. A free suite of plugins for Sketch and Photoshop that took the market by storm.</h4>
+<h4>
+What Craft essentially did, was granting superpowers in terms of plugins to the most popular and dominant design tools. Plugins included the ability to work with live data, incorporating stock photography, freehand for easy markup and the most import one, prototyping natively inside Sketch.</h4>
+<h5>Official Craft video</h5>
+
+<div class="image2">
+		     	<img src="c1.png">
+		     </div>
+
+
+<h3 id="special"><b>My Role</b></h3>
+<h4>I've joined the Craft team in the early release stages and helped shaped and drive some of the user experiences behind Craft Sync, Craft Prototyping and Craft Manager.</h4>
+<h4>I worked alongside product managers, designers and developers. I created frameworks, prototypes, conducted research and drove design sprints.
+</h4><h4>I lead the Craft team as a product manager for a period of two months. A opportunity that was very influential and valuable in terms of insights into role of product manager. How to drive the product, the team and meeting both the user and business goals.</h4>
+
+
+<h3 id="special"><b>Craft Sync</b></h3>
+<h4>The Craft Sync plugin enables user to sign in to the InVisionApp account in order to create new InVision prototypes and upload screens, assets and metadata from their Sketch and Photoshop design documents.</h4>
+<h4>Craft Sync provides a more faster, integrated and more reliable way of sending design files rom the design tool to InVision. This enabled users a more frequent and integrated syncing experience that did not obstruct the designers workflow.
+</h4>
+
+
+
+<div class="image2">
+		     	<img src="c4.png">
+		     </div>
+
+<div class="image2">
+		     	<img src="c3.png">
+		     </div>
+
+<h4>Before Craft Sync and the plugin integration a lot of the syncing and extraction of Sketch and Photoshop files happened on the server-side and not client-side. Such process involved too many risks, a lot of latency and sometimes even a down time. To make InVision look like part of the workflow and provide the best experience for our customers with perfect fidelity experience, the syncing and extraction has been moved to the client-side.</h4>
+<h4>Craft Sync provides a more faster, integrated and more reliable way of sending design files rom the design tool to InVision. This enabled users a more frequent and integrated syncing experience that did not obstruct the designers workflow.
+</h4>
+<h4>Most of the product development on Craft Sync was done using agile approach and all the features and development were adjusted based on the learnings on customers, emerging behaviors and newfound opportunities.</h4>
+
+<div class="image2">
+		     	<img src="c2.png">
+		     </div>
+
+<div class="image2">
+		     	<img src="c4.png">
+		     </div>
+
+
+
+<h3 id="special"><b>Craft prototyping</b></h3>
+<h4>Designing and prototyping are intrinsically linked. Decisions in one inform the other. However there is a large gap in the way those two assets are created which creates a fragmented and inefficient workflow.</h4>
+
+<h4>Before Sketch prototyping even existed, Craft Prototype was the first tool to introduce prototyping directly inside Sketch. Users were able to add hotspot to any layer in their Sketch project and then link to an artboards with a desktop or mobile gesture and create transitions by fading, sliding, rotating, and more.
+</h4>
+<h4>I lead the Craft team as a product manager for a period of two months. A opportunity that was very influential and valuable in terms of insights into role of product manager. How to drive the product, the team and meeting both the user and business goals.</h4>
+
+
+<div class="image2">
+		     	<img src="c5.png">
+		     </div>
+
+<div class="image2">
+		     	<img src="c6.png">
+		     </div>
+
+<h3 id="special"><b>Craft Manager</b></h3>
+<h4>Craft Manager is a Mac application responsible for installing and updating the Craft plugins. In conjunction with Craft Sync, it also lets user publish prototypes directly from within Sketch or Photoshop as well as providing access to user team prototypes right from the desktop.</h4>
+<h4>Craft manager provides a more faster, integrated and more reliable way of sending design files rom the design tool to InVision. This enabled users a more frequent and integrated syncing experience that did not obstruct the designers workflow.
+</h4>
+
+
+
+<div class="image2">
+		     	<img src="c2.png">
+		     </div>
+
+<div class="image2">
+		     	<img src="c3.png">
+		     </div>
+
+<div class="image2">
+		     	<img src="c4.png">
+		     </div>
+
+
+
+<h2>	Inspect</h2>
+<h4>Inspect simplifies the design-to-development process. With Inspect, teams can access measurements, colors, and assets for desktop and mobile prototypes. Get pixel-perfect comps, export assets, and many more.
+</h4>
+
+<h4>Since Inspect is integrated into the users workflow, the design files are saved once and all the assets are updated everywhere. Designers no longer need to export to multiple tools or annotating design files.
+</h4>
+<h4>I lead the Craft team as a product manager for a period of two months. A opportunity that was very influential and valuable in terms of insights into role of product manager. How to drive the product, the team and meeting both the user and business goals.</h4>
+
+
+<div class="image2">
+		     	<img src="c4.png">
+		     </div>
+
+
+<h3 id="special"><b>Problem Statement</b></h3>
+<h4>There are a lot of compromises, both technically and visually after the handoff happens. Usually the first common issue happens in the process soon after the design in either static form or prototype hets handed off to the developers. Developers have to dissect the design in their minds back to whatever code base they are working on and transform it from the piece of artwork into a living interactive experience. The less prescriptive the design is, the less likely it will end up as a result that fits the initially imagined goal.
+</h4>
+
+<h4>Design and developer collaboration is a challenging problem and there are many opportunities how to keep them in sync. None of the tooling philosophies that exist today are enforcing that behavior. All they do is try to do similar or close to a similar things. Unless the tooling from design to development all share the same settings or agreed on setting, there is no real "bridge” between developers and designers.
+</h4>     
+
+
+<h3 id="special"><b>The goal</b></h3>
+<h4>How do we keep the designer and developer separated in the hope they can come together more cleanly in design and development. How can we eliminate the unnecessary steps of specifying a design in one language and translating into another by enabling both design and development to share a common language.
+</h4>
+
+<h4>These is where Inspect comes in. A point of collaboration for designers and developers. An automatic, added value to the InVision workflow. With Inspect engineers can quickly stub out an early prototype or build a pixel perfect implementation with the confidence that they're developing from the team's single source of truth.
+</h4>   
+
+
+<h3 id="special"><b>My role</b></h3>
+<h4>I have been the first designer on the Inspect team and part of the public release in November 2016. Inspect was my first large initiative after joining InVision therefore I still sometimes refer to it as "my baby”. Out work for Inspect was a real team effort and consisted out of lot of research, customer interviews, planing and much more. A lot of features and development were adjusted based on the learning on customers in private beta, emerging behaviors and newfound opportunities.
+</h4>
+
+<h4>I worked with project manager to define the Inspect roadmap, set the objectives, KIPs, technical risks and define the assumptions that needed to be tested.
+</h4>  
+<h4>I created frameworks and prototypes to share the vision, design principles and content strategy. I helped prioritize features, gain alignment and drive decision making.</h4>
+<h4>I collaborated closely with engineers to make sure the designs and features are implemented correctly, while at the same time learning and understanding the development process and the tool that we are building for them.</h4>
+
+<h3 id="special"><b>The outcome</b></h3>
+<h4>Inspect has been a large source of growth for the business, especially in the enterprise market and continues to be a point of discussion when talking to customers. The launch was very well received by customers and showed high user retention.</h4>
+
+
+<div class="image2">
+		     	<img src="c5.png">
+		     </div>
+<div class="image2">
+		     	<img src="c5.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="c5.png">
+		     </div>
+		     <div class="image2">
+		     	<img src="c5.png">
+		     </div>
+
+
+
+<div id="videoPlayer">
+	<video width="100%" controls  id="myVideo">
+		<source src="two.mp4" type="video/mp4">
+	</video>
+</div>
+
+<blockquote></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 	*{
 		padding: 0;
 		margin: 0;
-		font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 	}
 	.black{
 		width: 100%;
@@ -22,48 +22,49 @@
 		width: 100%; 
 	}
 	.content h1{
-		width: 72%;
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		font-size: 112px;
-		padding: 50px 0px 0px 110px;
-
+		font-size: 7vw; 
+		padding-top: 8%;
 	}
 	.sticky{
 		position: fixed;
-		top: 13%;
-		right: 8%;
-		font-size: 28px;
-		transform: translate(-13%, -8%);
+		top: 13.5%;
+		right: 8%; 
+		font-size: 26px;
+		transform: translate(-13.5%, -8%);
 	}
 	.content h6 a{
-		color: #000;
+		color: #000; 
 		text-decoration: none;
 	}
 	#sk{
 		opacity: 0;
+		font-weight: bold;
 		transition: 0.2s;
 	}
 	.sticky h6:hover #sk{
-		opacity: 1;
+		opacity: 1;  
 		padding-right: 41px;
 	}
  
-	.content p{
-		width: 72%;
+	.content p{ 
+		color: #888888; 
+		padding-top: 10px;
+		padding-bottom: 6%; 
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		color: #888888;
-		font-size: 21px;
-		padding-top: 20px;
-		padding-bottom: 40px;
-		padding-left: 110px;
+		font-size: 1.3vw;  
 	}
 	.content blockquote{
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	.image{
 		height: auto;
-		width: 83%;
+		width: 82.5%;
 		margin-left: auto;
 	}
 	.image img{
@@ -74,28 +75,68 @@
 		font-size: 40px;
 		width: 48%;
 		margin: auto;
-		padding: 150px 0px 50px 30px;
+		padding: 30px 0px 25px 0px;
 	}
 	.content h3{
 		font-size: 24px;
 		width: 48%;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.7px;
 		margin: auto;
-		font-weight: lighter;
+		font-weight: 400;
 		line-height: 39px;
-		padding-bottom: 50px;
-		padding-left: 30px;
+		padding-bottom: 26px; 
 	}
 	.content h4{
 		color: #000000;
-		font-size: 19px;
+		font-size: 18px;
 		width: 48%;
 		margin: auto;
+		font-weight: 400;
+		letter-spacing: 0.2px;
 		font-weight: initial;
-		padding-bottom: 40px;
-		padding-left: 30px;
-		line-height: 36px;
+		padding-bottom: 26px; 
+		line-height: 30px;
 	}
+	::selection {
+        color: #fff;
+        background: black;
+}
+
+.header {
+  position: fixed;
+  top: 0; 
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #D1001D;
+  width: 0%;
+}
+.image2{
+		height: auto;
+		width: 66%;
+		margin: auto;
+	}
+	.image2 img{
+		max-width: 100%;
+		height: auto;
+		margin-top: 50px;
+		margin-bottom: 65px;
+	}
+	.content span{
+		font-size: 18px;
+		font-weight: 500;
+		color: #000;
+	}
+
+
 	 @media(max-width: 780px){
 	 	.content{
 	 		width: 100%;	
@@ -103,40 +144,60 @@
 	 	.sticky{
 		position: fixed;
 		top: 6%;
-		right: 5%;
-		font-size: 25px;
-		transform: translate(-6%, -5%);
+		right: 12%;
+		font-size: 26px;
+		transform: translate(-6%, -12%);
+	} 
+	#sk{
+		display: none;
 	}
 	.content h1{
-		font-size: 55px;
-		padding: 70px 0px 0px 30px;
+		width: 92%;
+		font-size: 57px;
+		padding: 150px 0px 0px 30px;
 	}
 	.content p{
-		color: #888888;
-		font-size: 21px;
+		width: 85%;  
+		font-size: 18.5px;
 		padding-top: 12px;
-		padding-bottom: 30px;
-		padding-left: 30px;
+		line-height: 34px;
+		padding-bottom: 60px;
+		padding-left: 0px;
+	}
+	.image{
+		height: 90vh;
+		width: 93%;  
+		margin-left: auto;
+		background-image: url(r4.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.image img{ 
+		display: none;
 	}
 	 .content blockquote{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	 }
 	 .content h2{
-		font-size: 27.5px;
-		width: 85%;
-		padding: 70px 0px 50px 0px;
+		font-size: 30px;
+		width: 86%;
+		padding: 70px 0px 30px 0px;
 	}
-	.content h3{
-		font-size: 19.5px;
-		width: 85%;
+	.content h3{ 
+		width: 86%;
+		font-size: 22px;
+		line-height: 34px;
 		padding-left: 0px;
 	}
-	.content h4{
-		font-size: 15px;
-		width: 85%; 
-		padding-left: 0px;
-		line-height: 32px;
+	.content h4{ 
+		width: 86%; 
+		line-height: 29.5px;
+		font-size: 17.4px;
+		padding-left: 0px; 
+	}
+	.image2{
+		width: 86%;
 	}
 }
 	  
@@ -151,6 +212,12 @@
 
 	<div class="black">
 		<div class="content">
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
 
          <div class="sticky">
 		      <h6><a href="work.html">Shohel. <span id="sk">works</span> </a></h6>
@@ -181,7 +248,7 @@
              
               <h4>Despite the fact that our product never saw the light of the day, we had the opportunity to lear a lot about transforming ideas into products, business models, marketing, research, monetization and much more.</h4>
 		     
-		     
+		     <blockquote></blockquote>
 
 		     <h2>How it all started</h2>
 
@@ -190,8 +257,226 @@
 		     <h4>Without our full time jobs and now even without our primary startup idea, that started it all, we were too determined to give up. After studying the lean startup method we have decided to give all this another try. To find the right problems we asked ourselves what product or service are we building? What is the problem we want to solve? Who are the customers? What is the target market? We have wrote down couple of ideas, based on our personal interests and knowledge in the field and rated them based on different values like interest, time, field of knowledge, etc..</h4>
 
 
+
+<div class="image2">
+		     	<img src="a6.png">
+		     </div>
+<h4>To validate our ideas we participated in different forums and community channels. At this time we have also moved to Berlin, so we went even beyond the digital channels and went on the streets. We stopped individuals who would potentially be the target group for each of the idea and asked them different questions to validate our idea and give us more insights.</h4>
+
+<h4>One of the ideas we had was cooking and eating. People could either cook a meal for someone else, and anyone could show up through the app at their house or apartment and enjoy the meal together with them. Or they would go to someone else place and eat the meal some else prepared for them. This would be very valuable for new people who have just move to the city, or someone who lives alone but does miss sharing their meal with others. Interesting fact about this idea is that it does exist today.</h4>
+
+<h4>After months of research we have picked and validate our idea. A platform for planing, sharing and achieving personal goals.</h4>
+
+
+<div class="image2">
+		     	<img src="a6.png">
+		     </div>
+
+<h2>Problem Definition</h2>
+
+<h4>Through research we came to the conclusion that people like to share and read success stories. Such stories are making people motivated and excited. In some cases they even show us what is possible and what is not and we are even willing to risk more.</h4>
+
+<h4>This was also the time when social media platforms such as Instagram were just on the rise. People started to follow and look up to successful people. Some of them were even mentors or selling online courses. The problem we have identified was that there was no common platform for creating, planning and monitoring people, who are trying to achieve different goals through those courses.</h4>
+<blockquote></blockquote>
+<h2>Research</h2>
+
+<h4>We wanted to know what is the real problem that we need to solve and get a sense of what users would need and want. We found couple of handful resources and studies. One of them mentioned that people who are writing down their goals and share that information or updates with a friend, were on average 33% more successful in accomplishing those goals, that those with merely formulated goals.</h4>
+
+
+<div class="image2">
+		     	<img src="a2.png">
+		     </div>
+
+<h4>The market did not had any efficient tool that would allow people who are mentors or are selling different types of courses, to follow individual people how well they are doing on the journey to achieve a specific goal and guide or help them get back on track. We created couple of online surveys and interviews some users. The primary questions were around the problem they have when they want to achieve a goal.</h4>
+<h4>Based on our research people were not achieving their goals because of:</h4>
+
+<h4>
+	<span>Postponing goals</span><br>
+Hardest part is to start, but people usually search for excuses and postpone their goals.</h4>
+
+<h4><span>Lack of motivation</span><br>
+Motivation is the key to achieve their goals and most of the time people don't get the support they need.</h4>
+
+<h4><span>Lack of knowledge</span><br>
+Almost every goal requires certain degree of knowledge. Without any of it users can feel lost.</h4>
+
+<h4><span>To many options</span><br>
+In some instances people are presented with too many options. This causes confusion and people loose interest.</h4>
+
+<h4><span>Beginners insecurity</span><br>
+The most common problem is that people are afraid of failure. They don't like to take risks and rather stay safe where they are.</h4>
+
+<blockquote></blockquote>
+<h2>Hypothesis</h2>
+<h4>After analyzing the data, we created and validate the hypothesis that became the foundations for our MVP:</h4>
+
+<h4><span>Hypothesis 1</span><br>
+Create a goal, which can be break down into smaller targets and are more manageable and easier to accomplish.</h4>
+
+<h4><span>Hypothesis 2</span><br>
+Create a goal, which can be break down into smaller targets and are more manageable and easier to accomplish.</h4>
+
+<h4><span>Hypothesis 3</span><br>
+Create a goal, which can be break down into smaller targets and are more manageable and easier to accomplish.</h4>
+
+<h4><span>Hypothesis 4</span><br>
+Create a goal, which can be break down into smaller targets and are more manageable and easier to accomplish.</h4>
+
+<h4><span>Hypothesis 5</span><br>
+Create a goal, which can be break down into smaller targets and are more manageable and easier to accomplish.</h4>
+
+<blockquote></blockquote>
+
+<h2>Website validation</h2>
+
+<h4>Before building our landing page, we decided to put some effort into our branding. We wanted to establish a strong visual image upon which we could communicate our mission and product with the world.</h4>
+
+<div class="image2">
+		     	<img src="a1.png">
+		     </div>
+
+
+<h4>After the branding was done we built an informal landing page. The goal was to communicate our core idea and get validation from the users.</h4>
+
+
+<div class="image2">
+		     	<img src="a3.png">
+		     </div>
+
+<h2>Validation data</h2>
+<h4>Validating our product idea through the landing page saved us a lot of time before we even start building the MVP. For the validation to be successful we decided that the KPI for the call to action had to be at least 10% of conversion and over 50-100 signups. We also monitored how many users clicked on the sign-up button, but did not fill out the form and how much time they have spend on the website.</h4>
+
+<h4>50% of users have submitted the goals they want to achieve. In one week we had around 800 unique visitors, 140 clicks on sign up form, 90 email and 7 mentors signups.</h4>
+
+<h4>As our product idea was validated it was time to start preparing for the first MVP.</h4>
+
+<h4><span>Number of page views in 1 month:</span><br>
+4345 unique visitors
+</h4>
+<h4><span>Number of mentor signups:</span><br> 
+43 clicks, 24 submissions
+</h4>
+<h4><span>Number of user signups</span><br> 
+158 clicks, 127 submissions
+</h4>
+
+<blockquote></blockquote>
+
+<h2>User stories</h2>
+<h4>User stories were part of our agile approach that helped us to shift focus from writing about requirements to talking about them. They included a sentence or two, and more importantly, series of conversations about the desired functionality.</h4>
+
+
+<div class="image2">
+		     	<img src="a4.png">
+		     </div>
+
+<blockquote></blockquote>
+<h2>Personas</h2>
+<h4>Creating personas helped us create empathy and understanding the people we are building the product for. They are a relatable snapshot of the target audience that highlights their needs, motivation, behaviors and demographics. At the end, it makes the design decisions less abstract and more human.</h4>
+
+<div class="image2">
+		     	<img src="a6.png">
+		     </div>
+
+
+<blockquote></blockquote>
+
+<h2>User flow</h2>
+<h4>A visual representation of the user's flow to complete a tasks within the product. It's the user perspective of the site organization, making it easier to identify which steps could be improved or designed.</h4>
+
+<div class="image2">
+		     	<img src="a4.png">
+		     </div>
+
+
+
+<blockquote></blockquote>
+
+<h2>core product</h2>
+<h4>A visual representation of the user's flow to complete a tasks within the product. It's the user perspective of the site organization, making it easier to identify which steps could be improved or designed.</h4>
+
+<div class="image2">
+		     	<img src="a7.png">
+		     </div>
+
+
+<h2>Usability test</h2>
+<h4>As a startup we did not had the intention of fundraising, therefore we wanted to alter our product incrementally in response to our customer feedback.</h4>
+<h4>After we have created the wireframes we did some 1-1 interviews in which users have been asked to perform a series of tasks, such as create a new goal, create a task within the goal, change your personal email preferences and much more.
+</h4>
+
+<div class="image2">
+		     	<img src="a4.png">
+		     </div>
+<h4>In total, we observed 18 attempts of performing specific tasks. Of those 18 attempts, 6 were successful and 2 were partially successful. For this particular site, we gave each partial success half a point. In general, 50% credit worked well for us, since we didn’t had any compelling reason to give different types of errors especially high or low scores.</h4>
+<h4>In this example, the success rate was (6+(2*0.5))/18 = 38</h4>
+
+
+<h2>Improvements</h2>
+<h4>The test users showed us that there was a lot of room for improvements. We took the feedback we gathered and conveyed that into restructuring some of the user experience.</h4>
+<div class="image2">
+		     	<img src="a3.png">
+		     </div>
+
+<h2>Final outcome</h2>
+<h4>After couple of validations and tests we were at the point were the MVP was ready to be build and tested in the real environment.</h4>
+
+<div class="image2">
+		     	<img src="a1.png">
+		     </div>
+<div class="image2">
+		     	<img src="a3.png">
+		     </div>
+
+
+<h2>Development</h2>
+<h4>We started building the web foundation while design was still in the early stages. We needed more time and resources to crate a stable back-end environment upon which our platform would be build. As we were only two team member that came with a lot of challenges and we had to made a lot of compromises on our MVP functionality. We were slowly running out of a time, so we narrowed the MVP down to its minimal requirements, so that at least users would be able to perform certain tasks, while still make it sticky and usable. The goal for our MVP was focused on creating a goal, creating tasks and share success stories.</h4>
+
+<blockquote></blockquote>
+<h2>Final thoughts</h2>
+<h4>We have developed the product MVP to a stage that was functional and usable. But as unexpected events happened, our MVP never made it into the hands of our users.</h4>
+
+<h4>Looking back at it now I can surely say it's been a quite a ride. A valuable experience that has still left impact on me and my career today. It help me better understand the startup environment and opened my eyes into product creation process. The effort and sacrifices that are needed to bring a product into the world was beyond my expectations. However, once a product makes into the world and becomes “alive” is the time when the real journey actually begins.</h4>
+<blockquote></blockquote>
+
+
+
+
+
+
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 
 </body>
 </html>

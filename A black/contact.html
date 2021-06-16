@@ -6,12 +6,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 	*{
 		padding: 0;
 		margin: 0;
-		font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;
 	}
 	.black{
 		width: 100%;
@@ -22,19 +21,21 @@
 		width: 100%; 
 	}
 	.content h1{
-		width: 73%;
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		font-size: 112px;
+		font-size: 6.5vw;
 		color: #fff;
-		padding: 250px 0px 160px 110px;
+		padding-top: 16%;
+		padding-bottom: 16%;
 
 	}
 	.sticky{
 		position: fixed;
-		top: 13%;
+		top: 13.5%;
 		right: 8%;
-		font-size: 28px;
-		transform: translate(-13%, -8%);
+		font-size: 26px;
+		transform: translate(-13.5%, -8%);
 	}
 	.content h6 a{
 		color: #fff;
@@ -42,6 +43,7 @@
 	}
 	#sk{
 		opacity: 0;
+		font-weight: bold;
 		transition: 0.2s;
 	}
 	.sticky h6:hover #sk{
@@ -53,25 +55,27 @@
 		font-size: 40px;
 		width: 48%;
 		margin: auto;
-		padding: 150px 0px 50px 30px;
+		padding: 140px 0px 26px 0px;
 	}
 	.content p{
 		color: #fff;
 		font-size: 18px;
 		width: 48%;
 		margin: auto;
-		padding-bottom: 40px;
-		padding-left: 30px;
-		line-height: 31px;
+		font-weight: 400;
+		padding-bottom: 26px;
+		padding-left: 0px;
+		line-height: 30px;
 	}
 	.content h5{
-		width: 45.7%;
+		width: 48%;
 		margin: auto;
 		 color: #EA0F1E;
        	 cursor: pointer;
        	 font-size: 19px;
-       	 padding: 10px 15px;
-       	 transition: 0.5s;
+       	 font-weight: 400;
+       	 padding: 5px 0px;
+       	 transition: 0.3s;
 	}
 	.content h5 a{
 		color: #EA0F1E;
@@ -79,7 +83,25 @@
 	}
 	 
 	.content h5:hover{
-		padding-left: 79px;
+		padding-left: 82px;
+	}
+	.copy h4{
+		display: none;
+		width: 48%;
+		margin: auto;
+		 color: #EA0F1E;
+       	 cursor: pointer;
+       	 font-size: 19px;
+       	 font-weight: 400;
+       	 padding: 5px 15px;
+       	 transition: 0.3s;
+	}
+	.copy:hover .hello{
+		display: none;
+	}
+	.copy:hover h4{
+		padding-left: 82px;
+		display: block;
 	}
 	.content blockquote{
 		padding-top: 100px;
@@ -93,36 +115,51 @@
 			width: 100%;
 		}
         .content h1{
-        	font-size: 50px;
-        	padding: 190px 0px;
-        	text-align: center;
+        	width: 88%;
+        	font-size: 53px;
+        	padding: 250px 0px 90px 0px; 
         }
         .content h2{
-        	width: 90%;
+        	width: 86%;
         	padding-top: 80px;
         	font-size: 30px;
         }
         .content h5{
         	font-size: 18px;
         	padding: 10px 0px;
-        	margin: 0;
-        	width: 100%;
-        	text-align: center;
+        	margin: auto;
+        	width: 86%; 
         }
+        .content h5:hover{
+		padding-left: 0px;
+	}
+        .copy h4{
+        	width: 83%;
+        }
+        .copy:hover h4{
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+		padding-left: 0px;
+		display: block;
+	}
+	.c
          
         .content h5:hover{
-		padding-left: 25px;
+		padding-left: 0px;
 	}
         .content p{
-        	width: 90%;
+        	width: 86%;
         	font-size: 18px;
         }
         .sticky{
 		position: fixed;
 		top: 6%;
-		right: 5%;
+		right: 11%;
 		font-size: 25px;
-		transform: translate(-6%, -5%);
+		transform: translate(-6%, -11%);
+	} 
+	#sk{
+		display: none;
 	}
 
 	}
@@ -152,8 +189,10 @@
 		     <p>Feel free to reach out through any platforms bellow </p>
 
  
-
-		    <h5>hello@shohel.works <i class="fa fa-smile-o"></i></h5>
+             <div class="copy">
+		    <h5 class="hello">hello@shohel.works <i class="fa fa-smile-o"></i></h5>
+		    <h4>Copy to clipboard</h4>
+            </div>
 
 		    <h5><a href="https://www.instagram.com/">Instagram</a> </h5>
 

@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 	*{
 		padding: 0;
 		margin: 0;
-		font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 	}
 	.black{
 		width: 100%;
@@ -21,26 +21,27 @@
 	.content{
 		width: 100%; 
 	}
-	.content h1{
-		width: 73%;
+	.content h1{ 
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		font-size: 112px;
-		padding: 50px 0px 0px 110px;
-
+		font-size: 7vw; 
+		padding-top: 8.2%; 
 	}
 	.sticky{
 		position: fixed;
-		top: 13%;
+		top: 13.5%;
 		right: 8%;
-		font-size: 28px;
-		transform: translate(-13%, -8%);
+		font-size: 26px;
+		transform: translate(-13.5%, -8%);
 	}
 	.content h6 a{
-		color: #000;
+		color: #000; 
 		text-decoration: none;
 	}
 	#sk{
 		opacity: 0;
+		font-weight: bold;
 		transition: 0.2s;
 	}
 	.sticky h6:hover #sk{
@@ -49,17 +50,17 @@
 	}
  
 	.content p{
-		width: 73%;
+		color: #888888; 
+		padding-top: 10px;
+		padding-bottom: 10%; 
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		color: #888888;
-		font-size: 21px;
-		padding-top: 20px;
-		padding-bottom: 40px;
-		padding-left: 110px;
+		font-size: 1.3vw;
 	}
 	.content blockquote{
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	.image{
 		height: auto;
@@ -71,40 +72,127 @@
 		height: auto;
 	}
 	.content h2{
-		font-size: 44px;
+		font-size: 40px;
 		width: 48%;
 		margin: auto;
-		padding: 100px 0px 50px 30px;
+		padding: 30px 0px 28px 0px;
 	}
 	.content h3{
-		font-size: 23px;
+		font-size: 24px;
 		width: 48%;
 		margin: auto;
 		letter-spacing: 0.5px;
-		font-weight: lighter;
-		line-height: 43px;
-		padding-bottom: 50px;
-		padding-left: 30px;
+		font-weight: 400;
+		line-height: 38px;
+		padding-bottom: 26px; 
+
 	}
 	.content h4{
 		color: #000000;
-		font-size: 19px;
+		font-size: 18px;
 		width: 48%;
 		margin: auto;
-		font-weight: initial;
-		padding-bottom: 40px;
-		padding-left: 30px;
-		line-height: 36px;
+		letter-spacing: 0.5px;
+		font-weight: 400;
+		padding-bottom: 26px; 
+		line-height: 30px;
 	}
+	.content h5{
+		color: #000000;
+		font-size: 30px;
+		width: 48%;
+		margin: auto;
+		letter-spacing: 0.5px;
+		font-weight: 600;
+		padding-bottom: 26px; 
+		line-height: 40px;
+	}
+	.list{
+		width: 48%;
+	margin: auto;
+	}
+	.list span{
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	margin-top: 40px;  
+	margin-bottom: 30px;
+	 
+}
 	.image2{
 		height: auto;
 		width: 66%;
 		margin: auto;
 	}
 	.image2 img{
+		margin-top: 30px;
 		max-width: 100%;
 		height: auto;
 	}
+::selection{
+        color: #fff;
+        background: black;
+}
+
+.header {
+  position: fixed;
+  top: 0; 
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #D1001D;
+  width: 0%;
+} 
+.come{
+	 	width: 46%;
+	 	margin: auto; 
+	 	border-left: 4px solid #DDDDDD;
+	 	margin-bottom: 100px;
+	 	padding-left: 30px;
+	 	margin-top: 23px;
+	 }
+	  
+	 .come blockquote{
+	 	padding: 10px 0 0 0;
+	 	margin: 0;
+	 	line-height: 30px;
+	 	font-size: 18px;
+	 	color: #666666;
+	 }
+	 .come span{
+	 	font-size: 18px;
+	 	color: #666666; 
+	 	font-weight: 500;
+	 	padding-bottom: 15px;
+	 }
+	 .come address{
+	 	color: #555;
+	 	font-size: 17px;
+	 }
+	 .list ul{
+	margin-left: 7px;
+	margin-bottom: 40px; 
+	} 
+.list ul li {
+	color: #000;
+	font-size: 18px;
+		letter-spacing: 0.2px; 
+		line-height: 32px;
+		font-weight: 400;
+	padding: 0px 5px;
+	margin-left: 18px;  
+	text-decoration: none; 
+}
+
+
 	 @media(max-width: 780px){
 	 	.content{
 	 		width: 100%;	
@@ -112,41 +200,75 @@
 	 	.sticky{
 		position: fixed;
 		top: 6%;
-		right: 5%;
-		font-size: 25px;
-		transform: translate(-6%, -5%);
+		right: 12%;
+		font-size: 26px;
+		transform: translate(-6%, -12%);
+	} 
+	#sk{
+		display: none;
 	}
 	.content h1{
-		font-size: 55px;
-		padding: 40px 0px 0px 30px;
+		width: 92%;
+		font-size: 57px;
+		padding: 150px 0px 0px 30px;
 	}
 	.content p{
-		color: #888888;
-		font-size: 21px;
-		padding-top: 12px;
-		padding-bottom: 30px;
-		padding-left: 30px;
+		width: 85%;  
+		font-size: 18.5px;
+		padding-top: 2px;
+		line-height: 34px;
+		padding-bottom: 60px;
+		padding-left: 0px;
 	} 
+	.image{
+		height: 90vh;
+		width: 93%;  
+		margin-left: auto;
+		background-image: url(r6.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.image img{ 
+		display: none;
+	}
+	.image2{
+		width: 86%;
+	}
 	 .content blockquote{
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	 }
 	 .content h2{
-		font-size: 27.5px;
-		width: 85%;
-		padding: 70px 0px 50px 0px;
+		font-size: 30px;
+		width: 86%;
+		padding: 70px 0px 30px 0px;
 	}
 	.content h3{
-		font-size: 19.5px;
-		width: 85%;
+		font-size: 23px;
+		width: 86%;
 		padding-left: 0px;
 	}
 	.content h4{
-		font-size: 15px;
-		width: 85%; 
+		font-size: 17.5px;
+		width: 86%;  
 		padding-left: 0px;
-		line-height: 32px;
+		line-height: 29px;
 	}
+	.content h5{
+		width: 86%;
+		margin-top: 58px;
+		line-height: 0px;
+		font-size: 20px;
+	}
+	.list{
+		width: 86%;
+	}
+	.list ul li{
+		font-size: 18px;
+	}
+	.come{
+		width: 79%;
+	} 
 }
 
 
@@ -159,6 +281,12 @@
 
 	<div class="black">
 		<div class="content">
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
 
         <div class="sticky">
 		      <h6><a href="work.html">Shohel. <span id="sk">works</span> </a></h6>
@@ -189,7 +317,7 @@
              
               
 		     
-		     
+		     <blockquote></blockquote>
 
 		     <h2>The problem</h2>
 
@@ -203,9 +331,248 @@
 		     	<img src="n.png">
 		     </div>
 
+		     <blockquote></blockquote>
+
+
+<h2>Research</h2>
+<h4>To understand the problem we were solving for we connected with a local elementary school for children with special needs, where we interviewed the teachers and learned more about their learning process and problems they are facing, when teaching children with special needs. The biggest challenge is to provide the same support for all the children. A teacher has around 14 children in his class, and each of them has their own special needs. Some of them need more guiding and leading through the learning process, others need different tooling to be able to keep up with other classmates. It us difficult to ensure that all of the children are on the same level.</h4>
+
+<h4>The second research was based on the data we collected from online surveys. Unfortunately there is no specific statistics, how many children with special need are in the world, but we assumed that the reason behind this is that depending of the children's special needs, a lot of them are still attending "normal" elementary schools.</h4>
+
+<h4>We wanted to create a software application for children, so that they can learn and play educational games. The same software could also be applied to any child willing to learn. For that reason we expended our research on actual education and found out that 1 out of 5 people in the developing countries (862 million) can not read or write. Around 115 million children around the world do not attend in elementary school, 226 millions do not attend high school. Around 75% of uneducated children are female. 60% of children that attend an elementary school still does not know how to read or write, due to an insufficient amount of teachers, books and schools.</h4>
+
+
+<div class="image2">
+		     	<img src="e1.png">
+		     </div>
+
+		     <blockquote></blockquote>
+
+<h2>Solution</h2>
+
+<h4>Our application was based on providing quality education for every child. The application is a software program that works as an interactive textbook and workbook. At the same way the application is adapted for children with special needs. Therefore it supports voice command and speech recognition. Inside the learning activities, children can operate the application through pronunciation of numbers, computer mouse, a keyboard or even a touch screen.</h4>
+
+
+<blockquote></blockquote>
+
+<h2>User modeling</h2>
+
+<h4>In order to effectively create a meaningful and useful solution we first need to understand and design what the end-user needs.The personas help us keep focus on the people who will actually use the product. Our persona decisions were created on the collaboration with the local school for children with special needs. We have 3 main group of user we are targeting:</h4>
+
+<h5>Children</h5>
+ 
+ <div class="list">
+ 
+ 	<ul>
+ 	   <li>Children with no disabilities</li>
+ 	   <li>Children with autism</li>
+ 	   <li>Children with blindness or deafness</li>
+ 	   <li>Children with physical disabilities</li>
+ 	   <li>Children with Down Syndrome</li>
+ 	</ul> 
+ </div>
+
+ <h4>Each of the children are representing the end user in a unique way. Based on that data we needed to adjust the application and the user experience.</h4>
+
+
+<blockquote></blockquote>
+
+<h5>Teachers</h5>
+<h4>Users who are uploading the learning material, tests and look into the statistics on how each of the children is improving. With help of the statistics behind the software teachers can monitor the progress or regression of the child, so that they know what problems the child is facing and help them solve it.</h4>
+
+
+<blockquote></blockquote>
+
+<h5><b>Parents</b></h5>
+<h4>Parents also have insights into the statistics and improvements of their child to see their results and improvements.</h4>
+
+
+<blockquote></blockquote>
+
+<h2>User flows and tasks</h2>
+
+<h4>User flows and tasks are lists of all possible actions that needs to be thoroughly considered, as well as the system behavior in each scenario. It gives us the overview of the activities user is able to perform. The user flows and the task that the children would complete were based on the schools curricula ad their resources.</h4>
+<h4>
+Together with the school board we decided to focus on 4 main functions: learning materials, consolidation of knowledge, exams and educational games. Children can first learn a specific substance, consolidate and later check and test the knowledge in an entertaining game.</h4>
+
+ 
+ 
+<div class="list">
+  	<span>4 main functions</span>
+ 	<ul>
+ 	   <li>Learning materials</li>
+ 	   <li>Consolidation of knowledge</li>
+ 	   <li>Exams</li>
+ 	   <li>Educational games</li>
+ 	</ul>
+ </div>
+
+
+ 
+ <div class="list">
+
+ <span>Children task flow</span>
+ 	<ul>
+ 	   <li>Learn specific substance</li>
+ 	   <li>Consolidate</li>
+ 	   <li>Check and test</li>
+ 	   <li>Re-test through playing games</li>
+ 	</ul>
+</div> 
+
+ 
+<div class="list">
+
+<span>Learning task flow:</span>
+ 	<ul>
+ 	   <li>Login</li>
+ 	   <li>Sunbstance</li>
+ 	   <li>English</li>
+ 	   <li>Learn</li>
+ 	</ul>
+</div>
+
+<blockquote></blockquote>
+
+ <h2>Design Challenges</h2>
+ <h4>Before we could continue with the process, we needed to collaborate with the school board to lay down basic requirements that are needed for creating a great user experience. Creating an application for children and children with special needs doesn't mean to use standard design approaches but requires specific requirements.</h4>
+
+ <blockquote></blockquote>
+
+<h5>Colors</h5>
+
+<h4>Colors have a very psychological influence on the users. The age is powerful factor of our reactions to certain colors. Proof of this is the fact that our color preferences change over time and through different periods of our life.</h4>
+<h4>
+Colors have the biggest amount of influence on children with special needs. Effect of colors is very different from the forms of diseases and disorders and they can different from the individuals. For example: children with autism can strongly react to strong colors, even brushes or pencils. Colors, that are very loud can overall influence children attention and motivation.</h4>
+
+
+
+
+
+<div class="list">
+	<span>Color adjustments</span>
+ 	<ul>
+ 	   <li>Using yellow background that relaxes children</li>
+ 	   <li>Using less white color, which can influence children concentration, due to its brightness</li>
+ 	</ul>
+ </div>
+
+ <blockquote></blockquote>
+
+<h5>Shapes and forms</h5>
+
+<h4>Detection of forms depends on the form of the disease and needs of children. For example, children with dyslexia have a significant low processing and perceptions, what means that the child will need more time for perception of shapes.</h4>
+
+ 
+
+<div class="list">
+<span>Specific adjustments:</span>
+ 	<ul>
+ 	   <li>Minimum complexity of content</li>
+ 	   <li>Simple and optimal use</li>
+ 	   <li>Simple vocabulary</li>
+ 	   <li>Information presented as most correct form, specially images</li>
+ 	   <li>Highlighted parts of letters, fonts</li>
+ 	   <li>Administration of rewards and failed attempts</li>
+ 	   <li>Simple overview of the options</li>
+ 	   <li>Large button sizes and fonts</li>
+ 	   <li>Calm and no distracting colors</li>
+ 	   <li>Audio and video content</li> 
+ 	</ul>
+ </div>
+ 
+
+
+ <h2>Final product</h2>
+
+
+<div class="image2">
+		     	<img src="e3.png">
+		     </div>
+
+
+		     <blockquote></blockquote>
+
+		     <h2>The Results</h2>
+		     <h4>Before we started creating the application, we closely consulted with teachers and pedagogues, to understand our end users to provide a great user experience, which is simple and optimal for children and children with special needs.</h4>
+
+		     <h4>With the test project we wanted to measure the effectiveness, efficiency and emotion. Through effectiveness we wanted to see if our users have completed and achieved specific goals. With efficiency we measured the amount of effort the user need to put in to achieve their goals. And with a great joy, we measured how the users, in our case children and teachers, felt about the end product.</h4>
+
+<h4>In September 2010 we agreed to test the project in the elementary school for children with special need. With our test observation we were able to watch and listen carefully to the users as they work with our prototype. Although it was possible to collect far more elaborate data, observing our users was a quick way to obtain an objective thoughts about our product. Our participants worked through some specific tasks that were video recorded, what helped us to analyze and document the results and support our design decisions.
+
+</h4>
+
+<h4>Our test results that we gathered from the usability testing were better than we expected. We had a very high user satisfaction, children were very enthusiastic and interested in trying out the application. They were very happy playing games that were educational for them.</h4>
+
+
+<h4>The result of effectiveness was really good, but we still found a lot of room for improvements. Overall children didn't had any problems completing or achieving specific goals. The efficiency was the biggest success. The effort that children needed to put in was normal. I don't want to use the word low, because it needs some effort for children to do some mathematical tests, but overall we came to conclusion that our efficiency was possible through providing an user experience that really meets the children needs and since the data was provided by the school, children already knew everything about it, we just made it more useful and interesting for them.</h4>
+
+
+
+<div class="image2">
+		     	<img src="e2.png">
+		     </div>
+
+<blockquote></blockquote>
+
+
+<h2>School Response</h2>
+
+
+<h4>Since the project was a volunteer experience as part of the Imagine Cup competition we were very very pleased and thankful to the local elementary school that guided us through this process and provided us with any material we needed. Because we were all still attending university this was more like a side project showed a lot of potential and interests.</h4>
+ 
+
+ <h4>For saying thank you to the elementary school we installed the software on all of their computers and gave them access to use this software in their learning process and uploaded all the data knowing that we provided a better education for children and children with special needs.</h4>
+
+
+<div class="come">
+		     	 
+		     	<blockquote> &#8220;We are very grateful that we could contribute to this project. with our program. with our practices that we have at the school. but Eduplay helped us. how all this knowledge, all of these experiences and our test, to put together in such a shape. a shape that can be accessible to general crowd of children and we are pleased that we have also completed the successful cooperation that has created one such program, which will prove useful in this school year as an upgrade to the teaching process or as a motivational tool &#8220;.</blockquote>
+		     	<span><i>Headmistress</i></span>
+		     </div>
+
+<div class="come">
+		     	 
+		     	<blockquote> &#8220;I user Eduplay at my work, I use it by children who use alternative communication tools, in terms of literacy, but in particular, the program seems to me very appropriate to be used in early grades, because of the adaption, so that children can use the program regardless of his physical disabilities, but also because it allows us to use various switches, like customized keyboards, mice, and what is most important is that the children can learn through playing games. &#8220;.</blockquote>
+		     	<span><i>Speech Therapist</i></span>
+		     </div>
+
+<h2>Future vision</h2>
+
+<h4>Through the year of research, planing and building the software we saw a lot of improvements and potential ideas to make the product even better. We could connect with even more game developers that could provide better educational games. A lot of children also don't have the option to travel, so having a virtual experience to explore the would would be great as well.</h4>
+
+
+<h4>Technology is improving from day to day, things like face recognition for children with physical disabilities to login would be very helpful. Connecting tools like Xbox Connect could help children develop their motor skills. And through global division of school materials the same quality of school material could be accessible to children in third world countries.</h4>
+
+<blockquote></blockquote>
 
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 
 </body>
 </html>

@@ -21,18 +21,20 @@
 	.content{
 		width: 100%; 
 	}
-	.content h1{
-		font-size: 112px;
-		width: 73%;
+	.content h1{ 
+ 		width:  66%;
+		height: 70%;
 		margin: auto;
-		padding: 50px 0px 0px 110px;
+		font-size: 7vw; 
+		padding-top: 10.5%;
+
 	}
 	.sticky{
 		position: fixed;
-		top: 13%;
+		top: 13.5%;
 		right: 8%;
-		font-size: 28px;
-		transform: translate(-13%, -8%);
+		font-size: 26px;
+		transform: translate(-13.5%, -8%);
 	}
 	.content h6 a{
 		color: #000;
@@ -40,6 +42,7 @@
 	}
 	#sk{
 		opacity: 0;
+		font-weight: bold;
 		transition: 0.2s;
 	}
 	.sticky h6:hover #sk{
@@ -47,69 +50,94 @@
 		padding-right: 41px;
 	}
  
-	.content p{
+	#p{
 		color: #888888;
-		width: 73%;
+		padding-top: 10px;
+		padding-bottom: 14%; 
+		width:  66%;
+		height: 70%;
 		margin: auto;
-		font-size: 21px;
-		padding-top: 20px;
-		padding-bottom: 40px;
-		padding-left: 110px;
+		font-size: 1.3vw;  
 	}
 	.content blockquote{
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	.image{
 		height: auto;
-		width: 83%;
+		width: 82.5%;
 		margin-left: auto;
 	}
 	.image img{
 		max-width: 100%; 
 		height: auto;
+		margin-bottom: 70px;
+	}
+	.image2{
+		height: auto;
+		width: 66%;
+		margin: auto;
+	}
+	.image2 img{
+		max-width: 100%;
+		height: auto;
+		margin: 50px 0;
 	}
 	.content h2{
 		font-size: 40px;
 		width: 48%;
 		font-weight: bold;
 		margin: auto;
-		padding: 150px 0px 50px 30px;
+		padding: 60px 0px 25px 0px;
 	}
 	.content h3{
 		font-size: 24px;
 		width: 48%;
 		margin: auto;
-		font-weight: lighter;
-		line-height: 39px;
-		padding-bottom: 50px;
-		padding-left: 30px;
+		line-height: 38px;
+		font-weight: 400;
+		padding-bottom: 30px;
+		letter-spacing: 0.5px; 
+	} 
+	#p2{
+		font-size: 30px;
+		padding-top:55px;
+		width: 48%;
+		margin: auto;
+		line-height:42px;
+		font-weight: 500;
+		padding-bottom: 30px;
 	}
+	 
 	.content h4{
 		color: #000;
 		font-size: 18px;
 		width: 48%;
 		margin: auto;
-		font-weight: lighter;
-		padding-bottom: 40px;
-		padding-left: 30px;
-		line-height: 35px;
-	}
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		padding-bottom: 28px; 
+		line-height: 30px;
+	} 
 	 .content h5{
 	 	width: 48%;
 	 	margin: auto;
 	 	color: #EA0F1E;
 		font-size: 21px;
-		padding-bottom: 15px;
-		padding-left: 40px;
+		cursor: pointer;
+		padding-bottom: 25px; 
+		transition: 0.3s;
+	 }
+	 .content h5:hover{
+	 	padding-left: 80px;
 	 }
 	 .come{
-	 	width: 42.5%;
-	 	margin: auto;
-	 	padding-left: 38px;
+	 	width: 46%;
+	 	margin: auto; 
 	 	border-left: 4px solid #DDDDDD;
 	 	margin-bottom: 100px;
-	 	margin-top: 100px;
+	 	padding-left: 30px;
+	 	margin-top: 23px;
 	 }
 	 .come i{
 	 	color: #666666;
@@ -131,6 +159,84 @@
 	 	color: #555;
 	 	font-size: 17px;
 	 }
+	 ::selection {
+        color: #fff;
+        background: black;
+}
+
+.header {
+  position: fixed;
+  top: 0; 
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #D1001D;
+  width: 0%;
+}
+.mobi{
+width: 48%;
+	margin: auto;
+}
+#mob{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 0px 0px 5px 0px;
+	letter-spacing: 0.3px;
+} 
+#mob2{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+ 	letter-spacing: 0.3px;
+ 	margin: 0px 0px 5px 0px;
+} 
+#mob3{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 0px 0px 5px 0px;
+	letter-spacing: 0.3px;
+} 
+.list{
+	width: 48%;
+	margin: auto;
+}
+.list span{
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.5px; 
+	margin-top: 40px; 
+} 
+.list ul{
+	margin-left: 7px;
+	margin-bottom: 10px; 
+	} 
+.list ul li {
+	color: #000;
+	font-size: 18px;
+		letter-spacing: 0.5px; 
+		line-height: 32px;
+		font-weight: 400;
+	padding: 0px 5px;
+	margin-left: 18px;  
+	text-decoration: none; 
+}
+#videoPlayer{ 
+	padding-top: 50px;
+	width: 66%; 
+	margin: auto;
+}
+
+
 
 	 @media(max-width: 780px){
 	 	.content{
@@ -139,46 +245,75 @@
 	 	.sticky{
 		position: fixed;
 		top: 6%;
-		right: 5%;
-		font-size: 25px;
-		transform: translate(-6%, -5%);
+		right: 12%;
+		font-size: 26px;
+		transform: translate(-6%, -12%);
+	} 
+	#sk{
+		display: none;
 	}
 	.content h1{
-		font-size: 55px;
-		padding: 40px 0px 0px 30px;
+		width: 92%;
+		font-size: 57px;
+		padding: 150px 0px 0px 30px;
 	}
-	.content p{
-		color: #888888;
+	#p{
+		width: 85%; 
 		font-size: 21px;
 		padding-top: 12px;
-		padding-bottom: 30px;
-		padding-left: 30px;
+		padding-bottom: 60px;
+		padding-left: 0px;
+	}
+	.image{
+		height: 90vh;
+		width: 93%;  
+		margin-left: auto;
+		background-image: url(r2.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.image img{ 
+		display: none;
 	}
 	.content blockquote{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	 }
 	 .content h2{
-		font-size: 27.5px;
-		width: 85%;
-		padding: 70px 0px 50px 0px;
+		font-size: 30px;
+		width: 86%;
+		padding: 70px 0px 30px 0px;
 	}
 	.content h3{
-		font-size: 19.5px;
-		width: 85%;
+		font-size: 24px;
+		width: 86%;
 		padding-left: 0px;
 	}
 	.content h4{
-		font-size: 15px;
-		width: 85%; 
+		font-size: 18px;
+		width: 86%; 
 		padding-left: 0px;
 		line-height: 32px;
 	}
 	.content h5{
-	 	width: 85%; 
-		font-size: 18px; 
+	 	width: 86%; 
+		font-size: 21px; 
+		font-weight: lighter;
 		padding-left: 0px;
 	 }
+	 .content h5:hover{
+	 	padding-left: 0px;
+	 }
+	 .image2{
+		height: auto;
+		width: 86%;
+		margin: auto;
+	}
+	.image2 img{
+		max-width: 100%;
+		height: auto;
+		margin: 30px 0 45px 0;
+	}
 	 .come{
 	 	width: 82%; 
 	 	padding-left: 20px; 
@@ -200,6 +335,40 @@
 	 .come address{
 	 	color: #555;
 	 }
+	 .mobi{
+width: 86%; 
+}
+#mob{
+	line-height: 27px;
+	margin-bottom: 0px;
+}
+#mob2{
+	line-height: 27px;
+	margin-bottom: 0px;
+}
+#mob3{
+	line-height: 27px;
+	margin-bottom: 0px;
+}
+.list{
+	width: 86%;
+	margin: auto;
+}
+.list span{
+	font-size: 17.5px;
+}
+.list ul li{
+	font-size: 17.5px;
+}
+#p2{
+		font-size: 20px;
+		padding-top:55px;
+		width: 86%;
+		margin: auto;
+		line-height:42px;
+		font-weight: 600;
+		padding-bottom: 14px;
+	}
 	  
 	}
 
@@ -213,6 +382,14 @@
 
 	<div class="black">
 		<div class="content">
+           
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
 
          <div class="sticky">
 		      <h6><a href="work.html">Shohel. <span id="sk">works</span> </a></h6>
@@ -223,7 +400,7 @@
 
             <div class="both">
 			<h1>Days</h1>
-			<p>The days you will remember</p>
+			<p id="p">The days you will remember</p>
 		</div> 
        
             <blockquote></blockquote>
@@ -239,7 +416,7 @@
 
 		     <h3>Days is a beautiful countdown app to all the events that matter to you. Events are important, they're the small things in life that matter the most. Whether it's a wedding, a holiday or just a night out with your friends, Days helps you countdown to those special moments.</h3>
 
-		     <h4>Days started as a side project back in 2015. I was participating in a design contest and won. This was the beginning of a new business and friendship relationship with an iOS developer based in Manchester, UK Matt Davenport. Since then we have collaborated on couple of iOS projects, but Days still remained our most important and passioned project to date. We are still improving, iterating and most importantly learning and making sure our users are satisfied.</h4>
+		     <h4>Days started as a side project back in 2015. I was participating in a design contest and won. This was the beginning of a new business and friendship relationship with an iOS developer based in Manchester, UK <u>Matt Davenport</u>. Since then we have collaborated on couple of iOS projects, but Days still remained our most important and passioned project to date. We are still improving, iterating and most importantly learning and making sure our users are satisfied.</h4>
 
 		     
 		     <h5>Days on the App Store</h5>
@@ -266,11 +443,376 @@
 		     	<address>by shohel: India</address>
 		     </div>
 
+		     <div class="come">
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<blockquote><span>Huge fan .</span> Great UI. Very simple. Very reliable. And very straightforward. I appreciate how clean it is. A recommendation for the future is custom notifications for events. Great work!</blockquote>
+		     	<address>by shohel: India</address>
+		     </div>
+
+
+		     <h2>Days v1.0</h2>
+
+              <h4>We have launched the first version of Days in 2015. To learn more about the the problem, the design process and the outcome of the first launch, then read the <u>Days v1 case study</u>.</h4>
+
+
+              <div class="image2">
+		     	<img src="d2.png">
+		     </div>
+             
+             <div class="mobi">
+		     <h3 id="mob"> <b>Number of App downloads:</b>
+		     <br>637,155 up to the release of 2.0</h3>
+           
+           <h3 id="mob2"><b>Peak engagement: </b><br>140k MAU, 22k DAU</h3>
+
+		     <h3 id="mob3"> <b>Engagement at launch of v2.0:</b> <br> 112k MAU, 19k DAU</h3>
+             </div>
+
+             <div class="image2">
+		     	<img src="d3.png">
+		     </div>
+
+		     <h2>Days 2.0</h2>
+		     <h4>After our first launch we have closely monitored and collected feedback from customers. We have addressed and implemented all of the most requested features. Our app was growing and at the we had over 140k monthly active users. As we were identifying new opportunities to scale the app, we have decided to prepare a better foundation to support future ideas and direction. Redesigning and rebuilding the app in code was a necessary step to move forward. With releasing Days 2.0 we made the app faster, smarter and more beautiful than ever.</h4>
+
+		      <div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		     <div class="list">
+		     	<span>List of improvements in Days v2.0:</span>
+		     	<ul>
+		     	  <li>A completely redesigned experience </li>
+
+                  <li>Recurring events - counting down yearly to birthdays, anniversaries and much more</li>
+
+                  <li>Time based events - setting an exact time for an event</li>
+
+                  <li> More countdown formats - counting with weeks, hours, minutes and more! </li>
+
+                  <li> Unsplash integration - Searching thousands of beautiful photos by professional photographers, completely free! </li>
+
+                  <li> Unlocking more additional events through sharing </li>
+
+                  <li> Reorder categories and delete default ones </li>
+
+                  <li> Previous and upcoming events all on the same screen as a one single continued timeline </li>
+
+                  <li> A completely redesigned experience </li>
+
+                  <li> Purposefully created sharing images </li>
+
+		     	</ul>
+		     </div> 
+ 
+
+
+		      <p id="p2">My role</p>
+		     <h4>The Days team has only two members. Me as the lead designer and Matt as the iOS developer. Occasionally we also had some help from some friends and family members. While the roles have been somewhat defined, we both had to go beyond our capabilities, to keep the app up to speed, deliver, iterate, test and generate revenue.</h4>
+
+             
+             <h4>I have been the lead designer for the iOS app from the very beginning, defining the brand and the frameworks and the core user experience. I designed most of the marketing materials, created promotional videos and designed and coded the app's websites.</h4>
+
+             <h4>I worked alongside Matt to uncover insights into customer feedback, requirements and helped prioritize business goals and revenue models.</h4>
+
+             <h4>I worked very closely with Matt on the implementation of the features and in some cases even had my hands on Swift and Objective-C framework to help tweak some of the app animations and better understand the development process.</h4>
+
+             <h2>Tests and optimizations</h2>
+
+             <h4>Every design and product decision carries some risk. Rarely anything can nail on the first try and there's always room for improvement. As there are many tools to test features and product direction, most of our design and product decisions were based on the user feedback and gut feeling.</h4>
+
+             <h3><b>A/B testing</b></h3>
+
+              <div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		     <h4>We have A/B tested the upgrade screen. In the past we already conducted couple of test around pricing, discounts and the way how we communicate and convince users to upgrade to pro.</h4>
+
+
+		     <h4>This time we have tested a different layout for upgrading. Our existing layout listed all the pro features as a list with the purchase button bellow. The new layout had a comparison table, couple of app store reviews and QA around purchases, for example what are users paying for, is it a one time purchase, etc..</h4>
+
+		     <h4>We have measure the number of upgrades through a specific time period and seen notable improvements with the second layout.</h4>
+
+		     <div class="image2">
+		     	<img src="d3.png">
+		     </div>
+
+		     <h3><b>Price test</b></h3>
+
+		     <div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		     <h4>Another screen that we have tested was an exclusive offer for our most loyal users. We have selected a target group based on their amount of app usage and then show them the offer and see if they have upgraded.</h4>
+
+		     <div class="image2">
+		     	<img src="d3.png">
+		     </div>
+
+
+		     <h3><b>Landscape vs portrait</b></h3>
+
+ <div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		     <h4>Optimized App Store gallery can boos the conversion rate and is the first important impression of the app. We have run couple of App Store image test, one of which was landscape and portrait image orientation.</h4>
+
+
+<h4>After some personal insights and some research landscape image can improve the user conversion. Landscape images can have more impact on search traffic as they take the full width and grab more of the user's attention. However we have not seen an increased improvement in the tap-through-rate from the search results to the listing.</h4>
+
+
+<h2>Audience and demographics</h2>
+
+
+<h4>Probably the most important part of the marketing is knowing our audience. By analyzing the statistics of users including the age, gender and demographics we are able to customize a marketing strategy and scale where needed.</h4>
+<h4>Our demographic from last calendar year Jan 1 - Dec 31 2019:</h4>
+
+
+<div class="image2">
+		     	<img src="d3.png">
+		     </div>
+             
+
+
+<h2>The Outcome</h2>
+
+<div id="videoPlayer">
+	<video width="100%" controls  id="myVideo">
+		<source src="two.mp4" type="video/mp4">
+	</video>
+</div>
+
+
+<div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+
+		     <div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		     <p id="p2">Days website</p>
+
+		     <h4>I was responsible for the design and the development of the website. It's a simple page built with HTML and CSS. The website is a showcase website, whose objective is to present information about the app. While in the past we have listed the app's features, this time we left that up to the user to download the app and explore it themselves.</h4>
+
+
+                <div class="image2">
+		     	<img src="Rehash.png">
+		     </div>
+
+		     <h2>Special mentions</h2>
+
+		     <h4>On October 6th 2020 Greg Joswiak Apple's SVP of Marketing tweeted a photo of Days Countdown app, showing the new Days widget functionality on the upcoming iOS 14, just days before it's official release.</h4>
+
+		     <h4>Joswiak's tweet sparked a significant increase in App Store downloads and countless questions about the Days app. We have also received countless 5 star App reviews and feedback on how much people love the Days app and it's widget functionality.</h4>
+
+		     <div class="image2">
+		     	<img src="tweet.png">
+		     </div>
+
+		     <h2>Featured in App Store</h2>
+		     <h4>Days was featured by Apple, as a fantastic contribution to the App store, under the tagline "Great on iOS 14”.</h4>
+
+ <div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+
+<h2>Delightful interactions</h2>
+
+<h4>Micro-interaction are the delightful moments the users have while using the product. The small details can make the user experience more fun, emotional and human. Micro-interaction are events to serve different functions like communication a feedback as a result of an action, enhance sense of direct manipulation, help visualize the results of a certain action.</h4>
+
+
+<p id="p2">Days 2.0 release</p>
+
+ 
+
+<h4>We created an announcement video for our existing customers that would inform the users about the most important features in 2.0 release.</h4>
+
+
+<div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		  <p id="p2">Purchase</p>
+		  <h4>We love our customers and appreciate when they purchase the pro version and support our ongoing development. We wanted to communicate this to the customers when making the purchase as make the whole experience feel more human and emotional.</h4>
+
+
+<div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		     <h2>The challenges</h2>
+
+		     <h4>No product development comes without any challenges or obstacles. Here are couple of interesting challenges, informations and insights:</h4>
+		     <p id="p2">Free events</p>
+		     <h4>One of the main challenges has been around free events and revenue. For our first v1 release we have been sending messages to user to support the development and from where they could choose between 3 different amounts they wanted to donate and support us.</h4>
+		     <h4>In the later version we have changed the monetization and decided to limit the number events to 5. Which did result in a lot of negative feedback from our customers. As we have always kept the app ad-free, we come up with a solution that gives the user the ability to share the app with their friends in order to gain more events. So every time users run out of free events they can get 2 more events by sharing the app.</h4>
+
+
+<div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		     <p id="p2">iCloud Backup</p>
+		     <h4>Just recently we have released an update that has iCloud backup. Days never had iCloud backup and if the user has switched a phone or even just deleted the app, all the events were gone for good. I even encountered the problem myself, by replacing my iPhone and then I had to re-create all the events. We have seen a lot of negative feedback and frustration because of this.</h4>
+
+
+<div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+		     <p id="p2">Event sizes</p>
+		     <h4>Our primary and the most important screen is the event list of all events. In the latest 2.0 update we have changed the main timeline to include both upcoming and previous events. At the same time we have also increased the event size, so that the images can stand out even more. However that has resulted in some mixed customer satisfaction. On smaller iPhones the event size matters, some users even said they like to see as much events as possible without scrolling, to get that overview over all their events.</h4>
+		     <h4>For some time we have been opinionated about changing the event size. However as more customers expressed the concerns around larger event size we have decided to solve the problem. We experimented with different event sizes, but couldn't decide on how to please all users. Therefore we decided to release event size settings. Now the size of the event is customizable and users can choose between three different sizes.</h4>
 
 
 
-		</div>
-	</div>
+
+<div class="image2">
+		     	<img src="d2.png">
+		     </div>
+
+
+<p id="p2">App use cases</p>
+<h4>Couple of times we have been surprised by the way how customer use Days. One customer said they'd used Days to take a photo of themselves at a certain date so they could compare it in the future. Another customer is using the app for tracking wedding, bridal showers, dress delivery, bachelorette party and the wedding itself. And some are just using it for exams tracking.</h4>
+
+
+<p id="p2">Waterfall vs agile</p>
+<h4>As we are not fully committed to the app development and still do it as a side project, we have quite often fallen into the waterfall development process. Sometimes it took as months to release a feature, that we could release as an MVP in couple of weeks and then iterate from there. As some features still take months to develop due to team size limitation, we have decided to release features early, measure, iterate and improve from there.</h4>
+
+
+
+
+<p id="p2">Customer feedback</p>
+<h4>For direct customer feedback we have setup HelpScout, an email-based customer support platform. We have separate the feedback into two segments that separates problem reports and feature suggestions. Unfortunately we have sometimes received up to 5 emails per day and with Days being a side project we were unable to respond to all of them. One of the ideas we had, but have not build, was to create a Help Center section within the app that would have the most common QA. This would help eliminate some of the feedback. However we have not decided to pursue with the idea due to the amount of investment need and the need to hook the content with a documentation service.</h4>
+
+
+<h2>Feedback and reviews</h2>
+<h4>Customer reviews are good indicator that users are engaged with the app. No matter how long or short a review is, user has to take the time to write a review. Both compliments and complaints are key to knowing what to improve or what are the areas that lack some functionality or cause frustrations to the user. Any review can help us understand the user needs.</h4>
+
+
+<h4>For direct user feedback we have setup HelpScout, an email-based customer support platform that allows our customer to send feedback from within the app. We have separated the feedback into two segmentations one reporting a problem and second suggesting a feature.</h4>
+
+<h4>Overall we have<b> 2,617 reviews</b> with an average rating of 4.8 out of 5.</h4>
+
+
+
+<div class="come">
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<blockquote><span>Helps in so many ways!</span>This app is such a help. I’ve kept track of time between medical procedures, work deadlines and even days to my retirement. That last one helps to put things in perspective!</blockquote>
+		     	<address>by shohel: India</address>
+		     </div>
+
+
+
+<div class="come">
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<blockquote><span>One of my favorite apps on my iPhone! </span>This app is such a help. I’ve kept track of time between medical procedures, work deadlines and even days to my retirement. That last one helps to put things in perspective!</blockquote>
+		     	<address>by shohel: India</address>
+		     </div>
+
+
+<div class="come">
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<blockquote><span>So convenient!</span>This app is such a help. I’ve kept track of time between medical procedures, work deadlines and even days to my retirement. That last one helps to put things in perspective!</blockquote>
+		     	<address>by shohel: India</address>
+		     </div>
+
+<div class="come">
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<blockquote><span>Aesthetic Countdown </span>This app is such a help. I’ve kept track of time between medical procedures, work deadlines and even days to my retirement. That last one helps to put things in perspective!</blockquote>
+		     	<address>by shohel: India</address>
+		     </div>
+
+<div class="come">
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<i class="fa fa-star"></i>
+		     	<blockquote><span>I love this app so much.</span>This app is such a help. I’ve kept track of time between medical procedures, work deadlines and even days to my retirement. That last one helps to put things in perspective!</blockquote>
+		     	<address>by shohel: India</address>
+		     </div>
+
+
+<h2>What's next?</h2>
+<h4>For reasons that are still unclear Days 2.0 did not perform as well as we would have hopped. We are still seeing a lot of positive user feedback but would need to reevaluate the areas into which we want to invest.</h4>
+<h4>
+We still have a lot of product and feature ideas that we feel strongly about it and would have a large impact on our users. Days has become a side project that I always love coming back. I strongly believe in the product and will continue to do so.</h4>
+
+<blockquote></blockquote>
+<blockquote></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+
 
 </body>
 </html>

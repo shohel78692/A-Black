@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 	*{
 		padding: 0;
 		margin: 0;
-		font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;
 	}
 	.black{
 		width: 100%;
@@ -19,21 +19,22 @@
 		background-color: black;
 	}
 	.content{
-		width: 80%;
+		width: 82%;
 		margin: auto;
 	}
 	.content h1{
-		font-size: 112px;
-		color: #fff; 
-		padding: 40px 0px 0px 100px;
-
+		width:  82%;
+		margin: auto;
+		font-size: 6.5vw;
+		color: #fff;
+		padding-top: 40px; 
 	}
 	.sticky{
 		position: fixed;
-		top: 13%;
+		top: 13.5%;
 		right: 8%;
-		font-size: 28px;
-		transform: translate(-13%, -8%);
+		font-size: 26px;
+		transform: translate(-13.5%, -8%);
 	}
 	.content h6 a{
 		color: #fff;
@@ -41,6 +42,7 @@
 	}
 	#sk{
 		opacity: 0;
+		font-weight: bold;
 		transition: 0.2s;
 	}
 	.sticky h6:hover #sk{
@@ -49,15 +51,16 @@
 	}
  
 	.content p{
-		color: #EA0F1E; 
+		color: #EA0F1E;
 		font-size: 16px;
-		padding-top: 20px;
-		font-weight: bold;
-		letter-spacing: 0.5px;
-		padding-bottom: 40px;
-		padding-left: 100px;
+		padding-top: 10px; 
+		letter-spacing: 0.5px; 
+		width:  82%; 
+		margin: auto;
+		font-size: 1vw; 
+		padding-bottom: 1%;
 	}
-	.both{
+	.both{ 
 		padding-top: 10px;
 		padding-left: 10px;
 		transition: 0.4s;
@@ -66,7 +69,7 @@
 		text-decoration: none;
 	}
 	.both:hover{
-        padding-left: 40px;
+        padding-left: 55px;
 	}
 	 
 	 
@@ -74,6 +77,10 @@
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
+	::selection {
+        color: #fff;
+        background: black;
+}
 
 	@media(max-width: 780px){
 		.content{
@@ -82,21 +89,27 @@
 		 .sticky{
 		position: fixed;
 		top: 6%;
-		right: 5%;
+		right: 11%;
 		font-size: 25px;
-		transform: translate(-6%, -5%);
+		transform: translate(-6%, -11%);
+	} 
+	#sk{
+		display: none;
 	}
 	.content h1{
 		font-size: 55px;
-		padding: 85px  0 0 0;
-		width: 85%;
+		padding: 55px  0 0 0;
+		width: 90%;
 		margin: auto;
 	}
 	.content p{
 		font-size: 14px;
 		padding: 12px 0 0 0;
-		width: 85%;
+		width: 88%;
 		margin: auto;
+	}
+	.both:hover{
+        padding-left: 10px;
 	}
 	}
 
